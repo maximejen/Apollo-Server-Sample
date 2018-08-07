@@ -1,0 +1,32 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Query {
+    allProjects: [Project]
+    allTechnologies: [Technology]
+}
+
+type Mutation {
+    addProject (name: String, description: TranslatedString, technologies: [Technology])
+}
+
+type Project {
+    id: Int!
+    name: String
+    description: TranslatedString
+    technologies: [Technology]
+}
+
+type Technology {
+    id: Int!
+    name: String
+    description: TranslatedString
+    projects: [Project]
+}
+
+type TranslatedString {
+    en: String
+    fr: String
+}
