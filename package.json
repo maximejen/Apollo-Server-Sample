@@ -17,6 +17,7 @@
     "babel": "^6.23.0",
     "babel-preset-latest-node": "^1.0.0",
     "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
     "graphql": "^0.13.2",
     "graphql-tools": "^3.1.1",
     "lodash": "^4.17.10"
